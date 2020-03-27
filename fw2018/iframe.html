@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>frame</title>
+    <!--script type="text/javascript" async=""src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" />
+
+    <script type="text/javascript">$(document).ready(function(){});</script-->
+
+    <script LANGUAGE="JavaScript">
+      <!--
+      function openwin() {
+        window.open ("inner.html", "newwindow", "height=100, width=400, toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no") //写成一行
+      }
+	  function openwin2() {
+        window.open ("inner2.html", "newwindow2", "height=100, width=500, toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no") //写成一行
+      }
+	  function openwin3() {
+        window.open ("inner3.html", "newwindow3", "height=100, width=600, toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no") //写成一行
+      }
+      //-->
+    </script>
+
+    <script type="text/javascript">
+      function duihua()
+        {
+          alert("这个窗口是对话框！")
+        }
+      function queren()
+        {
+          var se=confirm("请选择点击一个按钮!");
+          if (se==true)
+           {
+             //alert("你按下的是【确认】");
+           }
+          else
+           {
+             //alert("你按下的是【取消】");
+           }
+        }
+      function tishi()
+        {
+          var t=prompt("请输入您的名字","KING视界")
+          if (t!=null && t!="")
+           {
+             document.write("精彩MV就在，" + t + "！属于你的世界")
+           }
+        }
+    </script>
+  </head>
+<body>
+  <div class="row-fluid">
+    <div class="span10 well">
+      <h3>frame</h3>
+      <a href="#" onclick="openwin()">打开一个窗口</a>
+      <input type="button" onclick="openwin()" value="弹跳框">
+      <input type="button" onclick="openwin2()" value="弹跳框2">
+      <input type="button" onclick="openwin3()" value="弹跳框3">
+      <input type="button" onclick="duihua()" value="对话框">
+      <input type="button" onclick="queren()" value="确认框">
+      <input type="button" onclick="tishi()" value="提示框">
+      <input id="login-email-address"  holder="Email/昵称/手机" tabindex="1" size="30" name="email" value="" init="init" placeholder="Email/昵称/手机">
+      <select id="ShippingMethod" onchange="updateShipping(options[selectedIndex]);" name="ShippingMethod">
+        <option value="12.51">UPS Next Day Air ==> $12.51</option>
+        <option value="11.61">UPS Next Day Air Saver ==> $11.61</option>
+        <option value="10.69">UPS 3 Day Select ==> $10.69</option>
+        <option value="9.03">UPS 2nd Day Air ==> $9.03</option>
+        <option value="8.34">UPS Ground ==> $8.34</option>
+        <option value="9.25">USPS Priority Mail Insured ==> $9.25</option>
+        <option value="7.45">USPS Priority Mail ==> $7.45</option>
+        <option value="3.20" selected="">USPS First Class ==> $3.20</option>
+      </select>
+      <iframe id="f1" name="f1" src="inner.html" width="800" height="800"></iframe>
+    </div>
+  </div>
+    <div class="row-fluid2">
+    <div class="span10 well">
+      <a href="#" onclick="openwin()">打开一个窗口</a>
+      <input type="button" onclick="openwin2()" value="弹跳框2">
+      <input type="button" onclick="duihua()" value="对话框2">
+      <input type="button" onclick="queren()" value="确认框2">
+      <input type="button" onclick="tishi()" value="提示框2">
+      <input id="login-email-address2"  holder="Email/昵称/手机" tabindex="1" size="30" name="email" value="" init="init" placeholder="Email/昵称/手机">
+      <select id="ShippingMethod2" onchange="updateShipping(options[selectedIndex]);" name="ShippingMethod">
+        <option value="12.521">UPS Next Day Air ==> $12.51</option>
+        <option value="11.621">UPS Next Day Air Saver ==> $11.61</option>
+        <option value="10.629">UPS 3 Day Select ==> $10.69</option>
+        <option value="9.023">UPS 2nd Day Air ==> $9.03</option>
+        <option value="8.324">UPS Ground ==> $8.34</option>
+        <option value="9.225">USPS Priority Mail Insured ==> $9.25</option>
+        <option value="7.425">USPS Priority Mail ==> $7.45</option>
+        <option value="3.220" selected="">USPS First Class ==> $3.20</option>
+      </select>
+    </div>
+  </div>
+</body>
+<!--script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script-->
+</html>
